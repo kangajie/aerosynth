@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Roboto';
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+
+ 
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #1f1f1f;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.logo span {
+  font-size: 1.8rem;
+  color: #ffea00;
+  font-weight: 600;
+  margin: 0 auto 0 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  color: #b7b7b7;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.nav-link:hover {
+  color: white;
+  transition: 0.3s all linear;
+  transform: scale(1.1);
+}
+
+.search-box {
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+  column-gap: 0.7rem;
+  padding: 8px 15px;
+  background: black;
+  border-radius: 4rem;
+}
+
+#search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  background: transparent;
+  font-size: 0.938rem;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/*hero section*/  
+  .container {
+    margin-top: 5rem;
+    padding: 80px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .card-content {
+    padding: 1rem;
+  }
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  .card-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+  }
+  .card-link {
+    margin-top: auto;
+    padding: 0.5rem;
+    text-align: center;
+    background: #000000;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+  }
+  .card-link:hover {
+    background: #808080;
+  }
+  footer {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffea00;
+    color: #1f1f1f;
+    padding: 10px 10px;
+  
+  }
+  .footer-text {
+    text-align: center;
+  }
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .logo span {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    display: none; 
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 15px;
+  }
+  
+  .custom-icon {
+    width: 15px;
+  }
+
+  /* hamburger icon */
+  .hamburger {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+
+  .navbar.active {
+    display: flex; 
+    flex-direction:row;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+  }
+  .navbar.active > * {
+    margin: 4px; 
+    padding: 4px; 
+  }
+  
+  .search-box {
+    display: none;
+  }
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .logo span {
+    font-size: 1.3rem;
+  }
+
+  .search-box {
+    padding: 6px 8px;
+    display: none;
+  }
+  .container {
+    margin-top: 5px;
+    padding: 20px; /* Mengurangi padding untuk layar kecil */
+    width: 100%;
+    max-width: 100%; /* Menghilangkan batas max-width untuk layar kecil */
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mengubah minmax agar lebih fleksibel */
+    gap: 1rem; /* Mengurangi jarak antar elemen */
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px; /* Tinggi gambar dikurangi */
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 0.8rem; /* Mengurangi padding untuk mobile */
+  }
+  
+  .card-title {
+    font-size: 1rem; /* Font-size lebih kecil untuk layar kecil */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.3rem;
+  }
+  
+  .card-description {
+    font-size: 0.8rem; /* Font-size lebih kecil untuk deskripsi */
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .card-link {
+    margin-top: auto;
+    padding: 0.4rem;
+    text-align: center;
+    background: #000000;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .card-link:hover {
+    background: #808080;
+  }
+  .footer {
+    padding: 5px 5px;
+  }
+  .footer-text{
+    font-size: 12px;
+  }
+}
+
+

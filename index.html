@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aerosynth</title>
+  <meta name="description" content="Website kelas">
+  <meta name="keywords" content="Aerosynth, teknik rekayasa komputer, TRK1A, poliwangi">
+  <meta name="author" content="Aerosynth">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div href="img/logo.png" class="logo">
+      <span>Aero</span>synth
+    </div>
+  
+    <!-- Hamburger Icon (only visible on mobile) -->
+    <div class="hamburger" id="hamburger-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#e8eaed" viewBox="0 0 24 24">
+        <path d="M3 18h18v-2H3v2zM3 12h18v-2H3v2zM3 6v2h18V6H3z"/>
+      </svg>
+    </div>
+  
+    <!-- Navbar -->
+    <div class="navbar" id="navbar">
+      <a href="" class="nav-link">
+        <!-- SVG icon -->
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+        <span class="nav-link-title">home</span>
+      </a>
+      <a href="projek/index.html" class="nav-link">
+        <!-- SVG icon -->
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-183v-274L200-596v274l240 139Zm80 0 240-139v-274L520-457v274Zm-40-343 237-137-237-137-237 137 237 137ZM160-252q-19-11-29.5-29T120-321v-318q0-22 10.5-40t29.5-29l280-161q19-11 40-11t40 11l280 161q19 11 29.5 29t10.5 40v318q0 22-10.5 40T800-252L520-91q-19 11-40 11t-40-11L160-252Zm320-228Z"/></svg>
+        <span class="nav-link-title">project</span>
+      </a>
+      <a href="personil/index.html" class="nav-link">
+        <!-- SVG icon -->
+        <svg class="custom-icon"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><circle cx="6" cy="4" r="2"></circle><path d="M9 7H3a1 1 0 0 0-1 1v7h2v7h4v-7h2V8a1 1 0 0 0-1-1z"></path><circle cx="17" cy="4" r="2"></circle><path d="M20.21 7.73a1 1 0 0 0-1-.73h-4.5a1 1 0 0 0-1 .73L12 14h2l-1 4h2v4h4v-4h2l-1-4h2z"></path></svg>
+        <span class="nav-link-title">personil</span>
+      </a>
+      <a href="toko/toko.html" class="nav-link">
+        <!-- SVG icon -->
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-560-56-56 63-64H320v-80h167l-64-64 57-56 160 160-160 160ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+        <span class="nav-link-title">toko</span>
+      </a>
+    </div>
+  <!--
+    <div class="search-box">
+      <input type="text" name="" id="search-input" placeholder="search personil">
+      - Search Icon -
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+    </div>
+  -->
+  </header>
+
+  <main class="hero">
+    <div class="hero-content">
+      <h1>Aerosynth</h1>
+      <p>Aerosynth merupakan gabungan kata "Aero" udara/atmosfer dan "Synth" sintesis/synthesizer.
+        Istilah ini menggambarkan sintesis teknologi dan elemen udara , sering dikaitkan dengan konsep futuristik, inovatif, atau berhubungan dengan musik elektronik dan teknologi canggih yang ringan serta dinamis.
+        Aerosynth ini mengusung  konsep yang fokus pada teknologi canggih, musik elektronik, atau produk inovatif yang ringan dan dinamis seperti Udara.</p>
+      <a href="https://www.instagram.com/_aerosynth" target="_blank" class="instagram-link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>  
+      </a>
+      <a href=" " target="_blank" class="instagram-link">
+        <svg class="custom-icon-contact" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"></path></svg>
+      </a>
+      <a href=" " target="_blank" class="instagram-link">
+        <svg class="custom-icon-contact" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+      </a>
+    </div>
+    <div class="hero-image">
+      <img src="img/logo.png" alt="Petani Kode Illustration">
+    </div>
+  </main>
+
+
+<!--contentl-->
+<div class="container">
+  <div class="header">
+      <h1>Content</h1>
+  </div>
+  <div class="categories">
+      <div class="category-card">
+        <div class="card mb-4">
+          <img class="card-img-top" src="img/AEROSYNTH1.jpg" alt="Materi 1">
+        </div>
+          <h3>Personil</h3>
+          <p>Kenali teman-teman Aerosynth lebih dekat.</p>
+          <a href="person/index.html" type="button" class="btn btn-outline-primary">view</a>
+      </div>
+      <div class="category-card">
+        <div class="card mb-4">
+          <img class="card-img-top" src="img/projek.jpg" alt="Materi 1">
+        </div>
+          <h3>Projek</h3>
+          <p>Lihat karya terbaik dari mahasiswa Aerosynth.</p>
+          <a href="projek/index.html" type="button" class="btn btn-outline-primary">view</a>
+      </div>
+      <div class="category-card">
+        <div class="card mb-4">
+          <img class="card-img-top" src="img/toko.jpg" alt="Materi 1">
+        </div>
+          <h3>Toko</h3>
+          <p>Kunjungi toko kami untuk melihat dan membeli produk-produk kami.</p>
+          <a href="toko/toko.html" type="button" class="btn btn-outline-primary">view</a>
+      </div>
+  </div>
+</div>
+
+<!-- Jadwal perkuliahan -->
+<section id="schedule" class="section bg-light">
+  <div class="container">
+    <div class="header">
+      <h1>Jadwal Perkuliahan</h1>
+  </div>
+      <!-- Schedule Filter -->
+      <div class="schedule-filter animate-on-scroll">
+          <div class="btn-group-vertical d-md-none w-100 mb-4">
+              <select class="form-select" id="dayFilter">
+                  <option value="all">Semua Hari</option>
+                  <option value="Senin">Senin</option>
+                  <option value="Selasa">Selasa</option>
+                  <option value="Rabu">Rabu</option>
+                  <option value="Kamis">Kamis</option>
+                  <option value="Jumat">Jumat</option>
+              </select>
+          </div>
+          <div class="btn-group d-none d-md-flex w-100">
+              <button class="btn btn-primary active" data-filter="all">Semua</button>
+              <button class="btn btn-primary" data-filter="Senin">Senin</button>
+              <button class="btn btn-primary" data-filter="Selasa">Selasa</button>
+              <button class="btn btn-primary" data-filter="Rabu">Rabu</button>
+              <button class="btn btn-primary" data-filter="Kamis">Kamis</button>
+              <button class="btn btn-primary" data-filter="Jumat">Jumat</button>
+          </div>
+      </div>
+
+      <!-- Schedule Desktop View -->
+      <div class="table-responsive d-none d-md-block animate-on-scroll">
+          <table class="table table-hover">
+              <thead class="table-primary">
+                  <tr>
+                      <th>Hari</th>
+                      <th>Mata Kuliah</th>
+                      <th>Jam</th>
+                      <th>Dosen</th>
+                  </tr>
+              </thead>
+              <tbody id="scheduleTableDesktop">
+                  <tr data-day="Senin">
+                      <td>Senin</td>
+                      <td>Algoritma dan Struktur Data</td>
+                      <td>07:30 - 11:40</td>
+                      <td>Indra Kurniawan, S.T., M.Eng.</td>
+                  </tr>
+                  <tr data-day="Selasa">
+                      <td>Selasa</td>
+                      <td>Pendidikan Pancasila</td>
+                      <td>07:30 - 09:10</td>
+                      <td>Ninik Sri Rahayu Wilujeng, S.H., M.H.</td>
+                  </tr>
+                  <tr data-day="Selasa">
+                    <td>Selasa</td>
+                    <td>Aljabar Linear</td>
+                    <td>12:30 - 14:10</td>
+                    <td>Khoirunisa, M.Mat.</td>
+                </tr>
+                <tr data-day="Selasa">
+                  <td>Selasa</td>
+                  <td>Bahasa Indonesia</td>
+                  <td>14:10 - 15:50</td>
+                  <td>Beby Dwi Febriyanti</td>
+              </tr>
+                  <tr data-day="Rabu">
+                      <td>Rabu</td>
+                      <td>Jaringan Komputer Dasar</td>
+                      <td>12:30 - 16:20</td>
+                      <td>Agus Priyo Utomo, S.ST., M.Tr.Kom.</td>
+                  </tr>
+                  <tr data-day="Jumat">
+                    <td>Jumat</td>
+                    <td>Rangkaian Elektronika Digital</td>
+                    <td>07:30 - 11:40</td>
+                    <td>Arif Fahmi, S.T., M.T.</td>
+                </tr>
+                <tr data-day="Jumat">
+                  <td>Jumat</td>
+                  <td>Basis Data</td>
+                  <td>12:30 - 16:20</td>
+                  <td>Alfin Hidayat, S.T., M.T.</td>
+              </tr>
+              </tbody>
+          </table>
+      </div>
+
+      <!-- Schedule Mobile View -->
+      <div class="d-md-none animate-on-scroll">
+          <div class="row g-3" id="scheduleCardsMobile">
+              <div class="col-12" data-day="Senin">
+                  <div class="card h-100 border-0 shadow-sm">
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center mb-2">
+                              <h5 class="card-title mb-0">Algoritma dan Struktur Data</h5>
+                              <span class="badge bg-primary">Senin</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-2">
+                              <i class="bi bi-clock me-2"></i>
+                              <span>07:30 - 11:40</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                              <i class="bi bi-person me-2"></i>
+                              <span>Indra Kurniawan, S.T., M.Eng.</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12" data-day="Selasa">
+                  <div class="card h-100 border-0 shadow-sm">
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center mb-2">
+                              <h5 class="card-title mb-0">Pendidikan Pancasila</h5>
+                              <span class="badge bg-primary">Selasa</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-2">
+                              <i class="bi bi-clock me-2"></i>
+                              <span>07:30 - 09:10</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                              <i class="bi bi-person me-2"></i>
+                              <span>Ninik Sri Rahayu Wilujeng, S.H., M.H.</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12" data-day="Selasa">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">Aljabar Linear</h5>
+                            <span class="badge bg-primary">Selasa</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-clock me-2"></i>
+                            <span>12:30 - 14:10</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-person me-2"></i>
+                            <span>Khoirunnisa, M.Mat.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12" data-day="Selasa">
+              <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                          <h5 class="card-title mb-0">Bahasa Indonesia</h5>
+                          <span class="badge bg-primary">Selasa</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-2">
+                          <i class="bi bi-clock me-2"></i>
+                          <span>14:10 - 15:50</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                          <i class="bi bi-person me-2"></i>
+                          <span>Beby Dwi Febriyanti</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+              <div class="col-12" data-day="Rabu">
+                  <div class="card h-100 border-0 shadow-sm">
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center mb-2">
+                              <h5 class="card-title mb-0">Jaringan Komputer Dasar</h5>
+                              <span class="badge bg-primary">Rabu</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-2">
+                              <i class="bi bi-clock me-2"></i>
+                              <span>12:30 - 16:20</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                              <i class="bi bi-person me-2"></i>
+                              <span>Agus Priyo Utomo, S.ST., M.Tr.Kom.</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12" data-day="Jumat">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">Rangkaian Elektronika Digital</h5>
+                            <span class="badge bg-primary">Jumat</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-clock me-2"></i>
+                            <span>07:30 - 11:40</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-person me-2"></i>
+                            <span>Arif Fahmin, S.T., M.T.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12" data-day="Jumat">
+              <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                          <h5 class="card-title mb-0">Basis Data</h5>
+                          <span class="badge bg-primary">Jumat</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-2">
+                          <i class="bi bi-clock me-2"></i>
+                          <span>12:30 - 16:20</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                          <i class="bi bi-person me-2"></i>
+                          <span>Alfin Hidayat, S.T., M.T.</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!--struktur kelas-->
+<div class="container">
+    <div class="header">
+      <h1>Kepengurusan</h1>
+  </div>
+<section>
+  <div class="org-chart">
+    <div class="level level-1">
+        <div class="position" data-delay="0">
+            <i class="fas fa-user-tie"></i>
+            <h3>Ketua</h3>
+        </div>
+    </div>
+    
+    <div class="connector"></div>
+    
+    <div class="level level-2">
+        <div class="position" data-delay="200">
+            <i class="fas fa-user-shield"></i>
+            <h3>Wakil Ketua</h3>
+        </div>
+    </div>
+    
+    <div class="connector"></div>
+    
+    <div class="level level-3">
+        <div class="position" data-delay="400">
+            <i class="fas fa-file-alt"></i>
+            <h3>Sekretaris 1</h3>
+        </div>
+        <div class="position" data-delay="600">
+            <i class="fas fa-file-alt"></i>
+            <h3>Sekretaris 2</h3>
+        </div>
+        <div class="position" data-delay="800">
+            <i class="fas fa-wallet"></i>
+            <h3>Bendahara 1</h3>
+        </div>
+        <div class="position" data-delay="1000">
+            <i class="fas fa-wallet"></i>
+            <h3>Bendahara 2</h3>
+        </div>
+    </div>
+</div>
+</section>
+
+<!--kontak-->
+<section id="kontak" class="py-5 bg-light">
+  <div class="container">
+    <div class="header">
+      <h1>Kirim Pesan atau Tanggapan</h1>
+    </div>
+      <form id="contact-form">
+          <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Pesan/Tanggapan</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Tulis pesan atau tanggapan Anda" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Kirim Pesan</button>
+      </form>
+      <div id="response-message" class="response-message"></div>
+  </div>
+</section>
+<!--
+    <footer>
+        <div class="footer-text">
+          <p>&copy; 2024 Aerosynth. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    -->
+  
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

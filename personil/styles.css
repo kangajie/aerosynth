@@ -1,0 +1,344 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Roboto';
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+
+ 
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #1f1f1f;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.logo span {
+  font-size: 1.8rem;
+  color: #ffea00;
+  font-weight: 600;
+  margin: 0 auto 0 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  color: #b7b7b7;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.nav-link:hover {
+  color: white;
+  transition: 0.3s all linear;
+  transform: scale(1.1);
+}
+
+.search-box {
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+  column-gap: 0.7rem;
+  padding: 8px 15px;
+  background: black;
+  border-radius: 4rem;
+}
+
+#search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  background: transparent;
+  font-size: 0.938rem;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+
+/* Bagian Home */
+.home {
+  position: relative;
+  min-height:fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2rem !important;
+  border-radius: 0.5rem;
+  padding: 10px;
+  overflow: hidden;
+  gap: 5px;
+}
+
+/* Teks Home */
+.home-text {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  color: #1f1f1f;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  margin-top: 2rem;
+  z-index: 1; 
+}
+
+/* Gambar Home */
+.home-img {
+  position: relative;
+  width: 80%;
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 15px rgba(40, 38, 38, 0.5); 
+  margin-top: 5rem;
+}
+
+/* Kontainer untuk ikon-ikon Instagram */
+.instagram-container {
+  display: flex;
+  position: relative;
+  flex-direction: row; 
+  gap: 15px;           
+  margin-top: 10px;
+  justify-content: center;
+}
+
+/* Link Instagram */
+.instagram-link {
+  display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px; 
+    border: 2px solid #1f1f1f; 
+    padding: 0px; 
+    box-sizing: border-box; 
+}
+
+/* Ukuran dan Efek Hover pada Ikon */
+.instagram-link {
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;       
+  transition: transform 0.3s;
+}
+
+.instagram-link:hover {
+  transform: scale(1.1); 
+}
+
+/* Personel Section */
+#personel {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #1f1f1f;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.person {
+  width: 180px; 
+  text-align: center;
+  background-color: #fff; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 15px; 
+  transition: transform 0.3s, box-shadow 0.3s; 
+  overflow: hidden;
+}
+
+.person:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.person img {
+  width: 100%; 
+  border-radius: 10px; 
+  border: 2px solid #1f1f1f;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.person img:hover {
+  transform: scale(1.1); 
+}
+
+.person p {
+  margin-top: 8px;
+  color: #1f1f1f;
+  font-weight: bold; 
+  font-size: 16px;
+}
+
+footer {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #ffea00;
+  color: #1f1f1f;
+  padding: 10px 10px;
+
+}
+.footer-text {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .logo span {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    display: none; 
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 15px;
+  }
+  
+  .custom-icon {
+    width: 15px;
+  }
+
+  /* hamburger icon */
+  .hamburger {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+
+  .navbar.active {
+    display: flex; 
+    flex-direction:row;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+  }
+  .navbar.active > * {
+    margin: 4px; 
+    padding: 4px; 
+  }
+  
+  .search-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .logo span {
+    font-size: 1.3rem;
+  }
+
+  .search-box {
+    padding: 6px 8px;
+    display: none;
+  }
+   /* Bagian Home */
+   .home-text {
+    font-size: 13px;
+  }
+
+  .home-img {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .custom-icon-contact {
+    width: 20px;
+    display: block; 
+  }
+  
+  .instagram-link {
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px; 
+    border: 2px solid #1f1f1f; 
+    padding: 0px; 
+    box-sizing: border-box; 
+  }
+  
+
+  /* Personel Section */
+  .person {
+    width: 150px;
+  }
+  .person p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }  
+  .footer {
+    padding: 5px 5px;
+  }
+  .footer-text{
+    font-size: 12px;
+  }
+}
